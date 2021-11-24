@@ -1,0 +1,58 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo2.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo3.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo1.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo5.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo4.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolafogo6.png" type="Texture" id=6]
+[ext_resource path="res://script_Bola_de_Fogo.gd" type="Script" id=7]
+[ext_resource path="res://Imagens/animaçoes/sasuke/Fogosumindo4.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/animaçoes/sasuke/Fogosumindo1.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/animaçoes/sasuke/Fogosumindo2.png" type="Texture" id=10]
+[ext_resource path="res://Imagens/animaçoes/sasuke/Fogosumindo3.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "boladefogo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "fogosome",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 15.8148
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bola_de_Fogo" type="Area2D" parent="."]
+collision_layer = 7
+collision_mask = 7
+script = ExtResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bola_de_Fogo"]
+position = Vector2( -51.0421, -22.7179 )
+frames = SubResource( 1 )
+animation = "boladefogo"
+frame = 4
+playing = true
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bola_de_Fogo"]
+position = Vector2( 7.62939e-06, 0 )
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="Bola_de_Fogo"]
+wait_time = 1.5
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bola_de_Fogo"]
+[connection signal="area_entered" from="Bola_de_Fogo" to="Bola_de_Fogo" method="_on_Bola_de_Fogo_area_entered"]
+[connection signal="body_entered" from="Bola_de_Fogo" to="Bola_de_Fogo" method="_on_Bola_de_Fogo_body_entered"]
+[connection signal="animation_finished" from="Bola_de_Fogo/AnimatedSprite" to="Bola_de_Fogo" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Bola_de_Fogo/Timer" to="Bola_de_Fogo" method="_on_Timer_timeout"]

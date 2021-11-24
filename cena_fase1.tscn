@@ -1,0 +1,457 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Imagens/background/Forest of Death2.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/background/Forest of Death 1.png" type="Texture" id=3]
+[ext_resource path="res://script_fase1.gd" type="Script" id=4]
+[ext_resource path="res://Imagens/background/Forest of Death7.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/background/Forest of Death6.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/background/Forest of Death4.png" type="Texture" id=7]
+[ext_resource path="res://Imagens/background/Forest of Death5.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/background/Forest of Death3.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/background/sobrepor forest.png" type="Texture" id=10]
+[ext_resource path="res://Imagens/background/Forest of Death2 piso.png" type="Texture" id=11]
+[ext_resource path="res://cena_inimigo.tscn" type="PackedScene" id=12]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "agua",
+"speed": 3.0
+} ]
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 208, 32, 32, 32, 16, 8, 168, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 192, 24, 40, 24, 24, 16, 184, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 24, 16, 56, 16, 56, 16, 24, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 24, 16, 184, 16, 192, 24, 32, 24 )
+
+[sub_resource type="TileSet" id=6]
+0/name = "Forest of Death2.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 216, 48 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Forest of Death2.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 216, 48 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 3 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Forest of Death2 piso.png 2"
+2/texture = ExtResource( 11 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 216, 48 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 5 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "tabua",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 151.777, 5.79922 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 59.3989, 5.79922 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 27.2993, 4.42291 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 36.2532, 5.79922 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 1776.67, 32.0016 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 11.5213, 1.03736 )
+script = ExtResource( 4 )
+
+[node name="Forest4" type="Sprite" parent="."]
+position = Vector2( 172.454, 184.172 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest6" type="Sprite" parent="."]
+position = Vector2( 1697.55, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest8" type="Sprite" parent="."]
+position = Vector2( 1949.38, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest9" type="Sprite" parent="."]
+position = Vector2( 2200.81, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest10" type="Sprite" parent="."]
+position = Vector2( 2456.14, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest11" type="Sprite" parent="."]
+position = Vector2( 2709.61, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest12" type="Sprite" parent="."]
+position = Vector2( 2959.06, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest13" type="Sprite" parent="."]
+position = Vector2( 3202.01, 183.684 )
+scale = Vector2( 0.718819, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest7" type="Sprite" parent="."]
+position = Vector2( 1441.8, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest5" type="Sprite" parent="."]
+position = Vector2( 1187.83, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest3" type="Sprite" parent="."]
+position = Vector2( 934.322, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest2" type="Sprite" parent="."]
+position = Vector2( 679.862, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="Forest" type="Sprite" parent="."]
+position = Vector2( 425.105, 183.684 )
+scale = Vector2( 0.734429, 0.734429 )
+texture = ExtResource( 3 )
+
+[node name="pedrinha" type="Sprite" parent="."]
+position = Vector2( 498.581, 430.859 )
+texture = ExtResource( 9 )
+
+[node name="pedrinha2" type="Sprite" parent="."]
+position = Vector2( 1291.16, 427.66 )
+texture = ExtResource( 10 )
+
+[node name="pedrinha3" type="Sprite" parent="."]
+position = Vector2( 2085.26, 423.165 )
+texture = ExtResource( 10 )
+
+[node name="pedrinha4" type="Sprite" parent="."]
+position = Vector2( 2875.02, 426.378 )
+scale = Vector2( 0.998077, 1 )
+texture = ExtResource( 10 )
+
+[node name="agua2" type="AnimatedSprite" parent="."]
+position = Vector2( 2161.05, 544.958 )
+scale = Vector2( 2.39254, 2.39777 )
+frames = SubResource( 1 )
+animation = "agua"
+frame = 1
+playing = true
+
+[node name="agua" type="AnimatedSprite" parent="."]
+position = Vector2( 1212, 546.378 )
+scale = Vector2( 2.39777, 2.39777 )
+frames = SubResource( 1 )
+animation = "agua"
+playing = true
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+position = Vector2( 1, 2.37839 )
+tile_set = SubResource( 6 )
+cell_size = Vector2( 16, 16 )
+collision_layer = 3
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 1966160, 1, 0, 2031636, 1, 0, 2031790, 1, 0, 2097278, 1, 0, 2228222, 2, 0, 2162748, 1, 0, 2162790, 1, 0, 2228264, 1, 0, 2228374, 1, 0, 2228426, 2, 0 )
+
+[node name="tabua" type="AnimatedSprite" parent="."]
+position = Vector2( 77.5526, 553.361 )
+frames = SubResource( 7 )
+animation = "tabua"
+playing = true
+
+[node name="tabua2" type="AnimatedSprite" parent="."]
+position = Vector2( 436, 522.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+playing = true
+
+[node name="tabua3" type="AnimatedSprite" parent="."]
+position = Vector2( 748, 570.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+frame = 1
+playing = true
+
+[node name="tabua4" type="AnimatedSprite" parent="."]
+position = Vector2( 1068, 554.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+frame = 1
+playing = true
+
+[node name="tabua5" type="AnimatedSprite" parent="."]
+position = Vector2( 1388, 506.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+playing = true
+
+[node name="tabua6" type="AnimatedSprite" parent="."]
+position = Vector2( 1740, 554.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+playing = true
+
+[node name="tabua7" type="AnimatedSprite" parent="."]
+position = Vector2( 2124, 538.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+frame = 1
+playing = true
+
+[node name="tabua8" type="AnimatedSprite" parent="."]
+position = Vector2( 2508.49, 569.671 )
+frames = SubResource( 7 )
+animation = "tabua"
+frame = 1
+playing = true
+
+[node name="tabua9" type="AnimatedSprite" parent="."]
+position = Vector2( 2892.06, 522.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+frame = 1
+playing = true
+
+[node name="tabua10" type="AnimatedSprite" parent="."]
+position = Vector2( 3343, 570.378 )
+frames = SubResource( 7 )
+animation = "tabua"
+playing = true
+
+[node name="Fundo" type="ParallaxBackground" parent="."]
+follow_viewport_enable = true
+
+[node name="Node2D6" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2893.75, 482.218 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 664.851, 319.72 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 425.16, 481.734 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2130.55, 317.058 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1374.5, 463.167 )
+
+[node name="Node2D" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2976.47, 318.328 )
+
+[node name="Pedrona" type="StaticBody2D" parent="." groups=[
+"Plataform",
+"obj",
+]]
+position = Vector2( 544.115, 394.143 )
+collision_layer = 5
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 4.75671, -38.8405 )
+rotation = -0.00519672
+shape = SubResource( 8 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 789.368, -39.3388 )
+rotation = -0.00519672
+shape = SubResource( 8 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 1585.28, -41.9821 )
+rotation = -0.00519672
+shape = SubResource( 8 )
+one_way_collision = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 2370.58, -40.4804 )
+rotation = -0.00519672
+shape = SubResource( 8 )
+one_way_collision = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 2691.43, -38.0491 )
+rotation = -0.00519672
+shape = SubResource( 9 )
+one_way_collision = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 1899.46, -40.1144 )
+rotation = -0.00519672
+shape = SubResource( 9 )
+one_way_collision = true
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 1108.29, -37.436 )
+rotation = -0.00519672
+shape = SubResource( 9 )
+one_way_collision = true
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 314.846, -32.0236 )
+rotation = -0.00519672
+shape = SubResource( 9 )
+one_way_collision = true
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( -477.271, -26.9783 )
+rotation = -0.00519672
+shape = SubResource( 9 )
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 2814.77, 35.6466 )
+shape = SubResource( 10 )
+one_way_collision = true
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 2017.47, 41.3599 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 1226.93, 38.5314 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 433.123, 45.2586 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( -360.683, 46.9404 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 2157.66, 34.0588 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 1367.11, 32.6445 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( 573.305, 37.6899 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Pedrona"]
+position = Vector2( -220.502, 42.7353 )
+rotation = -0.00519672
+shape = SubResource( 11 )
+one_way_collision = true
+
+[node name="Morte" type="Area2D" parent="."]
+position = Vector2( 1764.85, 708.327 )
+collision_layer = 3
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Morte"]
+shape = SubResource( 12 )
+
+[node name="Node2D7" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1306.89, 320.546 )
+
+[node name="Node2D8" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2109.11, 501.357 )
+[connection signal="body_entered" from="Morte" to="." method="_on_Morte_body_entered"]

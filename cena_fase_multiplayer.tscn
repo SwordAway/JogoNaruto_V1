@@ -1,0 +1,86 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://cena_tela1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cena_fase1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://cena_tela2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cena_tela4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cena_tela5.tscn" type="PackedScene" id=5]
+[ext_resource path="res://cena_tela3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://cena_personagem.tscn" type="PackedScene" id=7]
+[ext_resource path="res://script_cena_fase_multiplayer.gd" type="Script" id=8]
+[ext_resource path="res://cena_chefao.tscn" type="PackedScene" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.3904, 193.308 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.3904, 313.865 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1487.95, 96.7565 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 766.294, 18.4824 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1860.92, 25.3251 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1016.55, -784.232 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 6449.28, -1543.55 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4401.19, -828.962 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 5425.49, -1528.29 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 5 )]
+position = Vector2( -13.4302, 2.93622 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 7476.93, -1527.93 )
+
+[node name="Naruto_Sasuke" parent="." instance=ExtResource( 7 )]
+position = Vector2( 106, 511 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( -105.85, 454.079 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 75.9217, -20.1298 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 5515.3, -1900.18 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 9339.01, -1698.92 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 8043.15, -2081.08 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 6152.77, -2081.86 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1102.3, -1149.03 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2643.43, -1267.3 )
+shape = SubResource( 5 )
+
+[node name="Node2D7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8999, -1007 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boladefogo.wav-f15512c8af71f3448d0a1c4f4904984e.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/boladefogo.wav"
+dest_files=[ "res://.import/boladefogo.wav-f15512c8af71f3448d0a1c4f4904984e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

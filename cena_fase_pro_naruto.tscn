@@ -1,0 +1,64 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://cena_tela2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cena_tela5.tscn" type="PackedScene" id=2]
+[ext_resource path="res://cena_tela3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cena_faseNaruto.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cena_tela1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://cena_tela4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://script_cena_fase_pro_naruto.gd" type="Script" id=7]
+[ext_resource path="res://cena_fase1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://cena_personagem.tscn" type="PackedScene" id=9]
+[ext_resource path="res://cena_faseSasuke.tscn" type="PackedScene" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 496.602 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 352.26, 8.79883 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( -0.834278, 1.33597 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1742.2, -14.2769 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2769.99, 1.00208 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 5851.33, -1568.7 )
+
+[node name="fase_sasuke" parent="." instance=ExtResource( 10 )]
+position = Vector2( 9237.36, -1545.85 )
+
+[node name="fase_naruto" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 9237.37, -1543.4 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3793.39, -50.6629 )
+
+[node name="Node2D8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4818.64, -783.966 )
+
+[node name="Naruto_Sasuke" parent="." instance=ExtResource( 9 )]
+position = Vector2( 101.205, 488.98 )
+scale = Vector2( 0.84, 0.84 )
+z_index = 18
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 10275.1, -1424.73 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -350.983, -130.814 )
+shape = SubResource( 2 )

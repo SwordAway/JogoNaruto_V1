@@ -1,0 +1,1986 @@
+[gd_scene load_steps=386 format=2]
+
+[ext_resource path="res://Imagens/animaçoes/correr2.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/animaçoes/correr1.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/animaçoes/correr6.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/animaçoes/correr5.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/animaçoes/correr3.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/animaçoes/jogawapon3.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/animaçoes/parado4.png" type="Texture" id=7]
+[ext_resource path="res://Imagens/animaçoes/agaixando1.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/animaçoes/correr4.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/animaçoes/pulo1.png" type="Texture" id=10]
+[ext_resource path="res://Imagens/animaçoes/parado2.png" type="Texture" id=11]
+[ext_resource path="res://Imagens/animaçoes/parado1.png" type="Texture" id=12]
+[ext_resource path="res://Imagens/animaçoes/jogawapon1.png" type="Texture" id=13]
+[ext_resource path="res://Imagens/animaçoes/jogawapon2.png" type="Texture" id=14]
+[ext_resource path="res://Imagens/animaçoes/pulo4.png" type="Texture" id=15]
+[ext_resource path="res://Imagens/animaçoes/agaixando3.png" type="Texture" id=16]
+[ext_resource path="res://Imagens/animaçoes/pulo3.png" type="Texture" id=17]
+[ext_resource path="res://Imagens/animaçoes/agaixando2.png" type="Texture" id=18]
+[ext_resource path="res://Imagens/animaçoes/pulo2.png" type="Texture" id=19]
+[ext_resource path="res://Imagens/animaçoes/parado3.png" type="Texture" id=20]
+[ext_resource path="res://script_personagem.gd" type="Script" id=21]
+[ext_resource path="res://Imagens/animaçoes/sasuke/animaFogo1.png" type="Texture" id=22]
+[ext_resource path="res://Imagens/animaçoes/hit1.png" type="Texture" id=23]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa3.png" type="Texture" id=24]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa4.png" type="Texture" id=25]
+[ext_resource path="res://Imagens/animaçoes/puloparede1.png" type="Texture" id=26]
+[ext_resource path="res://Imagens/animaçoes/puloparede2.png" type="Texture" id=27]
+[ext_resource path="res://Imagens/animaçoes/parede1.png" type="Texture" id=28]
+[ext_resource path="res://Imagens/animaçoes/parede2.png" type="Texture" id=29]
+[ext_resource path="res://Imagens/sons/Naruto - The Raising Fighting Spirit (Extended).wav" type="AudioStream" id=30]
+[ext_resource path="res://cena_pause.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Imagens/animaçoes/mortenaruto3.png" type="Texture" id=32]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo3.png" type="Texture" id=33]
+[ext_resource path="res://Imagens/animaçoes/vitoria1.png" type="Texture" id=34]
+[ext_resource path="res://Imagens/animaçoes/vitoria8.png" type="Texture" id=35]
+[ext_resource path="res://Imagens/animaçoes/vitoria4.png" type="Texture" id=36]
+[ext_resource path="res://Imagens/animaçoes/vitoria9.png" type="Texture" id=37]
+[ext_resource path="res://Imagens/animaçoes/vitoria2.png" type="Texture" id=38]
+[ext_resource path="res://Imagens/animaçoes/vitoria7.png" type="Texture" id=39]
+[ext_resource path="res://Imagens/animaçoes/vitoria6.png" type="Texture" id=40]
+[ext_resource path="res://Imagens/animaçoes/vitoria3.png" type="Texture" id=41]
+[ext_resource path="res://Imagens/animaçoes/vitoria5.png" type="Texture" id=42]
+[ext_resource path="res://Imagens/animaçoes/hit2.png" type="Texture" id=43]
+[ext_resource path="res://Imagens/animaçoes/mortenaruto5.png" type="Texture" id=44]
+[ext_resource path="res://Imagens/animaçoes/mortenaruto4.png" type="Texture" id=45]
+[ext_resource path="res://Imagens/animaçoes/mortenaruto1.png" type="Texture" id=46]
+[ext_resource path="res://Imagens/animaçoes/mortenaruto2.png" type="Texture" id=47]
+[ext_resource path="res://Imagens/sons/Shuriken.wav" type="AudioStream" id=48]
+[ext_resource path="res://Imagens/animaçoes/bater6.png" type="Texture" id=49]
+[ext_resource path="res://Imagens/animaçoes/bater5.png" type="Texture" id=50]
+[ext_resource path="res://Imagens/animaçoes/bater11.png" type="Texture" id=51]
+[ext_resource path="res://Imagens/animaçoes/bater2.png" type="Texture" id=52]
+[ext_resource path="res://Imagens/animaçoes/bater3.png" type="Texture" id=53]
+[ext_resource path="res://Imagens/animaçoes/bater4.png" type="Texture" id=54]
+[ext_resource path="res://Imagens/animaçoes/bater9.png" type="Texture" id=55]
+[ext_resource path="res://Imagens/animaçoes/bater13.png" type="Texture" id=56]
+[ext_resource path="res://Imagens/animaçoes/bater8.png" type="Texture" id=57]
+[ext_resource path="res://Imagens/animaçoes/bater1.png" type="Texture" id=58]
+[ext_resource path="res://Imagens/animaçoes/bater10.png" type="Texture" id=59]
+[ext_resource path="res://Imagens/animaçoes/bater7.png" type="Texture" id=60]
+[ext_resource path="res://Imagens/animaçoes/bater12.png" type="Texture" id=61]
+[ext_resource path="res://Imagens/sons/track-26-keisei-gyakuten-reverse-situation (mp3cut.net).wav" type="AudioStream" id=62]
+[ext_resource path="res://Imagens/animaçoes/atkcima1.png" type="Texture" id=63]
+[ext_resource path="res://Imagens/animaçoes/atkcima3.png" type="Texture" id=64]
+[ext_resource path="res://Imagens/animaçoes/atkcima2.png" type="Texture" id=65]
+[ext_resource path="res://Imagens/progressbar_sasuke.png" type="Texture" id=66]
+[ext_resource path="res://Imagens/SasukeDemonIcone.png" type="Texture" id=67]
+[ext_resource path="res://Imagens/SasukeIcone.png" type="Texture" id=68]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/parederapo4.png" type="Texture" id=69]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/parederapo2.png" type="Texture" id=70]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo5.png" type="Texture" id=71]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo3.png" type="Texture" id=72]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/raposapulo1.png" type="Texture" id=73]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo9.png" type="Texture" id=74]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa2.png" type="Texture" id=75]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo3.png" type="Texture" id=76]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo4.png" type="Texture" id=77]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo11.png" type="Texture" id=78]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo2.png" type="Texture" id=79]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo7.png" type="Texture" id=80]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo6.png" type="Texture" id=81]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socobaixorapo4.png" type="Texture" id=82]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo4.png" type="Texture" id=83]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo7.png" type="Texture" id=84]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo8.png" type="Texture" id=85]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo10.png" type="Texture" id=86]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo13.png" type="Texture" id=87]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo1.png" type="Texture" id=88]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo2.png" type="Texture" id=89]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo5.png" type="Texture" id=90]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo8.png" type="Texture" id=91]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa1.png" type="Texture" id=92]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo12.png" type="Texture" id=93]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa5.png" type="Texture" id=94]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo1.png" type="Texture" id=95]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo6.png" type="Texture" id=96]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo5.png" type="Texture" id=97]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo7.png" type="Texture" id=98]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo10.png" type="Texture" id=99]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo3.png" type="Texture" id=100]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/idleraposa6.png" type="Texture" id=101]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/transrapo11.png" type="Texture" id=102]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/vitoriarapo9.png" type="Texture" id=103]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/jogarshuriraposa1.png" type="Texture" id=104]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo5.png" type="Texture" id=105]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socobaixorapo3.png" type="Texture" id=106]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo1.png" type="Texture" id=107]
+[ext_resource path="res://Imagens/progressbar_naruto.png" type="Texture" id=108]
+[ext_resource path="res://Imagens/rosto_naruto.png" type="Texture" id=109]
+[ext_resource path="res://Imagens/rosto_naruto_raposa1.png" type="Texture" id=110]
+[ext_resource path="res://fonts/njnaruto.ttf" type="DynamicFontData" id=111]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/jogarshuriraposa3.png" type="Texture" id=112]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo4.png" type="Texture" id=113]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/hitrapo.png" type="Texture" id=114]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo4.png" type="Texture" id=115]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo3.png" type="Texture" id=116]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo2.png" type="Texture" id=117]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo6.png" type="Texture" id=118]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/puloparederapo1.png" type="Texture" id=119]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/jogarshuriraposa2.png" type="Texture" id=120]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo2.png" type="Texture" id=121]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/parederapo1.png" type="Texture" id=122]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socobaixorapo1.png" type="Texture" id=123]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/puloparederapo2.png" type="Texture" id=124]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo4.png" type="Texture" id=125]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/raposapulo4.png" type="Texture" id=126]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socobaixorapo2.png" type="Texture" id=127]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo2.png" type="Texture" id=128]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/raposapulo3.png" type="Texture" id=129]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/morterapo1.png" type="Texture" id=130]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo1.png" type="Texture" id=131]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo4.png" type="Texture" id=132]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/raposapulo2.png" type="Texture" id=133]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/agaixarapo6.png" type="Texture" id=134]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo5.png" type="Texture" id=135]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/parederapo3.png" type="Texture" id=136]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/correndorapo6.png" type="Texture" id=137]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo11.png" type="Texture" id=138]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socobaixorapo5.png" type="Texture" id=139]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo19.png" type="Texture" id=140]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo8.png" type="Texture" id=141]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo15.png" type="Texture" id=142]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo9.png" type="Texture" id=143]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo5.png" type="Texture" id=144]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo17.png" type="Texture" id=145]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo6.png" type="Texture" id=146]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo13.png" type="Texture" id=147]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo12.png" type="Texture" id=148]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo18.png" type="Texture" id=149]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo20.png" type="Texture" id=150]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo10.png" type="Texture" id=151]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo1.png" type="Texture" id=152]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo14.png" type="Texture" id=153]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo2.png" type="Texture" id=154]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo3.png" type="Texture" id=155]
+[ext_resource path="res://Imagens/animaçoes/Naruto Raposa/socorapo16.png" type="Texture" id=156]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hit1.png" type="Texture" id=157]
+[ext_resource path="res://Imagens/animaçoes/sasuke/shuri1.png" type="Texture" id=158]
+[ext_resource path="res://Imagens/animaçoes/sasuke/shuri2.png" type="Texture" id=159]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo6.png" type="Texture" id=160]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hit2.png" type="Texture" id=161]
+[ext_resource path="res://Imagens/animaçoes/sasuke/shuri3.png" type="Texture" id=162]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco6.png" type="Texture" id=163]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco7.png" type="Texture" id=164]
+[ext_resource path="res://Imagens/animaçoes/sasuke/agaixa1.png" type="Texture" id=165]
+[ext_resource path="res://Imagens/animaçoes/sasuke/agaixa2.png" type="Texture" id=166]
+[ext_resource path="res://Imagens/animaçoes/sasuke/agaixa3.png" type="Texture" id=167]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco4.png" type="Texture" id=168]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco5.png" type="Texture" id=169]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco1.png" type="Texture" id=170]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco2.png" type="Texture" id=171]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco3.png" type="Texture" id=172]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo4.png" type="Texture" id=173]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo5.png" type="Texture" id=174]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco9.png" type="Texture" id=175]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco12.png" type="Texture" id=176]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco8.png" type="Texture" id=177]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco13.png" type="Texture" id=178]
+[ext_resource path="res://Imagens/animaçoes/sasuke/pulo3.png" type="Texture" id=179]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo1.png" type="Texture" id=180]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo3.png" type="Texture" id=181]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco10.png" type="Texture" id=182]
+[ext_resource path="res://Imagens/animaçoes/sasuke/soco11.png" type="Texture" id=183]
+[ext_resource path="res://Imagens/animaçoes/sasuke/pulo4.png" type="Texture" id=184]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo2.png" type="Texture" id=185]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria15.png" type="Texture" id=186]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf5.png" type="Texture" id=187]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf6.png" type="Texture" id=188]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf7.png" type="Texture" id=189]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf10.png" type="Texture" id=190]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria9.png" type="Texture" id=191]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria16.png" type="Texture" id=192]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo4.png" type="Texture" id=193]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/chutePbaixodemon1.png" type="Texture" id=194]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo5.png" type="Texture" id=195]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo8.png" type="Texture" id=196]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria17.png" type="Texture" id=197]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria14.png" type="Texture" id=198]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf11.png" type="Texture" id=199]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo1.png" type="Texture" id=200]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo7.png" type="Texture" id=201]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/puloparededemo1.png" type="Texture" id=202]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf4.png" type="Texture" id=203]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf14.png" type="Texture" id=204]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf15.png" type="Texture" id=205]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf16.png" type="Texture" id=206]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf17.png" type="Texture" id=207]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf8.png" type="Texture" id=208]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf18.png" type="Texture" id=209]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/chutePbaixodemon2.png" type="Texture" id=210]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo16.png" type="Texture" id=211]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitMortedemo4.png" type="Texture" id=212]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo9.png" type="Texture" id=213]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf13.png" type="Texture" id=214]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf3.png" type="Texture" id=215]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf19.png" type="Texture" id=216]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo2.png" type="Texture" id=217]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria2.png" type="Texture" id=218]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria6.png" type="Texture" id=219]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/puloparededemo2.png" type="Texture" id=220]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria3.png" type="Texture" id=221]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria1.png" type="Texture" id=222]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf20.png" type="Texture" id=223]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria4.png" type="Texture" id=224]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo17.png" type="Texture" id=225]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria5.png" type="Texture" id=226]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf2.png" type="Texture" id=227]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf12.png" type="Texture" id=228]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria11.png" type="Texture" id=229]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/chutePbaixodemon3.png" type="Texture" id=230]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitMortedemo1.png" type="Texture" id=231]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf9.png" type="Texture" id=232]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo15.png" type="Texture" id=233]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/transf1.png" type="Texture" id=234]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo12.png" type="Texture" id=235]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo13.png" type="Texture" id=236]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria10.png" type="Texture" id=237]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo3.png" type="Texture" id=238]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo11.png" type="Texture" id=239]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo10.png" type="Texture" id=240]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitMortedemo2.png" type="Texture" id=241]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo14.png" type="Texture" id=242]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria8.png" type="Texture" id=243]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria7.png" type="Texture" id=244]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitMortedemo3.png" type="Texture" id=245]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria12.png" type="Texture" id=246]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/vitoriademo6.png" type="Texture" id=247]
+[ext_resource path="res://Imagens/animaçoes/sasuke/vitoria13.png" type="Texture" id=248]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/atkshuridemo2.png" type="Texture" id=249]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo7.png" type="Texture" id=250]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo3.png" type="Texture" id=251]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo11.png" type="Texture" id=252]
+[ext_resource path="res://Imagens/animaçoes/sasuke/pulo2.png" type="Texture" id=253]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo10.png" type="Texture" id=254]
+[ext_resource path="res://Imagens/animaçoes/sasuke/atkPbaixo2.png" type="Texture" id=255]
+[ext_resource path="res://Imagens/animaçoes/sasuke/atkPbaixo3.png" type="Texture" id=256]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo9.png" type="Texture" id=257]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo11.png" type="Texture" id=258]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo12.png" type="Texture" id=259]
+[ext_resource path="res://Imagens/animaçoes/sasuke/puloparede1.png" type="Texture" id=260]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo13.png" type="Texture" id=261]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo1.png" type="Texture" id=262]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo7.png" type="Texture" id=263]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo2.png" type="Texture" id=264]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo16.png" type="Texture" id=265]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/pulodemo3.png" type="Texture" id=266]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/pulodemo4.png" type="Texture" id=267]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo3.png" type="Texture" id=268]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo12.png" type="Texture" id=269]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo3.png" type="Texture" id=270]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo14.png" type="Texture" id=271]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo17.png" type="Texture" id=272]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo15.png" type="Texture" id=273]
+[ext_resource path="res://Imagens/animaçoes/sasuke/puloparede3.png" type="Texture" id=274]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo1.png" type="Texture" id=275]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo6.png" type="Texture" id=276]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo8.png" type="Texture" id=277]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo4.png" type="Texture" id=278]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo5.png" type="Texture" id=279]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/agaixardemo2.png" type="Texture" id=280]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/atkshuridemo3.png" type="Texture" id=281]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo5.png" type="Texture" id=282]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado2.png" type="Texture" id=283]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado3.png" type="Texture" id=284]
+[ext_resource path="res://Imagens/animaçoes/sasuke/atkPbaixo1.png" type="Texture" id=285]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo5.png" type="Texture" id=286]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/agaixardemo1.png" type="Texture" id=287]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado4.png" type="Texture" id=288]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado1.png" type="Texture" id=289]
+[ext_resource path="res://Imagens/animaçoes/sasuke/puloparede2.png" type="Texture" id=290]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo8.png" type="Texture" id=291]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo19.png" type="Texture" id=292]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo4.png" type="Texture" id=293]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hitMorte2.png" type="Texture" id=294]
+[ext_resource path="res://Imagens/animaçoes/sasuke/puloparede4.png" type="Texture" id=295]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo6.png" type="Texture" id=296]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo10.png" type="Texture" id=297]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado6.png" type="Texture" id=298]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo18.png" type="Texture" id=299]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo13.png" type="Texture" id=300]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo9.png" type="Texture" id=301]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hitMorte3.png" type="Texture" id=302]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hitMorte1.png" type="Texture" id=303]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hitMorte2.1.png" type="Texture" id=304]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/atkshuridemo1.png" type="Texture" id=305]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo2.png" type="Texture" id=306]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/socodemo4.png" type="Texture" id=307]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo2.png" type="Texture" id=308]
+[ext_resource path="res://Imagens/animaçoes/sasuke/pulo1.png" type="Texture" id=309]
+[ext_resource path="res://Imagens/animaçoes/sasuke/bolaDfogo1.png" type="Texture" id=310]
+[ext_resource path="res://Imagens/animaçoes/sasuke/hitMorte2.2.png" type="Texture" id=311]
+[ext_resource path="res://Imagens/animaçoes/sasuke/parado5.png" type="Texture" id=312]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado5.png" type="Texture" id=313]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado6.png" type="Texture" id=314]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/parededemo1.png" type="Texture" id=315]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/pulodemo2.png" type="Texture" id=316]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitdemo2.png" type="Texture" id=317]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado3.png" type="Texture" id=318]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/parededemo2.png" type="Texture" id=319]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/hitdemo1.png" type="Texture" id=320]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/pulodemo1.png" type="Texture" id=321]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado1.png" type="Texture" id=322]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/correrdemo6.png" type="Texture" id=323]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado2.png" type="Texture" id=324]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/demonparado4.png" type="Texture" id=325]
+[ext_resource path="res://Imagens/animaçoes/sasuke/animaFogo3.png" type="Texture" id=326]
+[ext_resource path="res://Imagens/animaçoes/sasuke/animaFogo2.png" type="Texture" id=327]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo3.png" type="Texture" id=328]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo4.png" type="Texture" id=329]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo5.png" type="Texture" id=330]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo1.png" type="Texture" id=331]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo2.png" type="Texture" id=332]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo14.png" type="Texture" id=333]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo11.png" type="Texture" id=334]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo9.png" type="Texture" id=335]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/animaFogodemon3.png" type="Texture" id=336]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo7.png" type="Texture" id=337]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo12.png" type="Texture" id=338]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo16.png" type="Texture" id=339]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo10.png" type="Texture" id=340]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo15.png" type="Texture" id=341]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/animaFogodemon2.png" type="Texture" id=342]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo17.png" type="Texture" id=343]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo13.png" type="Texture" id=344]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo8.png" type="Texture" id=345]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/animaFogodemon1.png" type="Texture" id=346]
+[ext_resource path="res://Imagens/animaçoes/sasuke demon/bolaDfogodemo6.png" type="Texture" id=347]
+[ext_resource path="res://script_PersonagemSasuke.gd" type="Script" id=348]
+[ext_resource path="res://Imagens/sons/boladefogo.wav" type="AudioStream" id=349]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.929412, 0.305882, 0, 1 )
+border_width_top = 5
+border_width_bottom = 1
+border_color = Color( 0.141176, 0.0588235, 0.34902, 0 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 111 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 1
+outline_color = Color( 0.968627, 0.164706, 0.00784314, 1 )
+use_filter = true
+font_data = ExtResource( 111 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.898039, 0.6, 0.0352941, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.784314, 0.694118, 0.541176, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_blend = true
+
+[sub_resource type="DynamicFont" id=7]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 111 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.129412, 0.0627451, 0.407843, 1 )
+border_width_top = 5
+border_width_bottom = 1
+border_color = Color( 0.141176, 0.0588235, 0.34902, 0 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.898039, 0.6, 0.0352941, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.784314, 0.694118, 0.541176, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.129412, 0.0627451, 0.407843, 1 )
+border_width_top = 5
+border_width_bottom = 1
+border_color = Color( 0.141176, 0.0588235, 0.34902, 0 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.898039, 0.6, 0.0352941, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.784314, 0.694118, 0.541176, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.929412, 0.305882, 0, 1 )
+border_width_top = 5
+border_width_bottom = 1
+border_color = Color( 0.141176, 0.0588235, 0.34902, 0 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.776471, 0.666667, 0.478431, 1 )
+
+[sub_resource type="DynamicFont" id=18]
+outline_size = 1
+outline_color = Color( 0.968627, 0.164706, 0.00784314, 1 )
+use_filter = true
+font_data = ExtResource( 111 )
+
+[sub_resource type="Animation" id=19]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Jogador2/Barra_Furia1/Label1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Jogador2/Barra_Furia2/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Jogador 1_1/Barra_Furia/Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Jogador1/Barra_Furia/Label:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ ExtResource( 58 ) ],
+"loop": false,
+"name": "atk1",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 20 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "pulo parede",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 53 ) ],
+"loop": false,
+"name": "atk3",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 52 ) ],
+"loop": false,
+"name": "atk2",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "correndo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 55 ) ],
+"loop": false,
+"name": "atk9",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "caindo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "pulando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 61 ) ],
+"loop": false,
+"name": "atk12",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 54 ) ],
+"loop": false,
+"name": "atk4",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": false,
+"name": "naparede",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 18 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "agaixando",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 60 ) ],
+"loop": false,
+"name": "atk7",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 65 ), ExtResource( 64 ) ],
+"loop": false,
+"name": "socoPbaixo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ) ],
+"loop": false,
+"name": "atk11",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 56 ) ],
+"loop": false,
+"name": "atk13",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 50 ) ],
+"loop": false,
+"name": "atk5",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 59 ) ],
+"loop": false,
+"name": "atk10",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 57 ) ],
+"loop": false,
+"name": "atk8",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 49 ) ],
+"loop": false,
+"name": "atk6",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "jogarwapon",
+"speed": 100.0
+} ]
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ ExtResource( 170 ) ],
+"loop": false,
+"name": "atk1",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 289 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 288 ), ExtResource( 312 ), ExtResource( 298 ) ],
+"loop": true,
+"name": "parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 172 ) ],
+"loop": false,
+"name": "atk3",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 171 ) ],
+"loop": false,
+"name": "atk2",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 180 ), ExtResource( 185 ), ExtResource( 181 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 160 ) ],
+"loop": true,
+"name": "correndo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 157 ), ExtResource( 161 ) ],
+"loop": false,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 175 ) ],
+"loop": false,
+"name": "atk9",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 179 ), ExtResource( 184 ) ],
+"loop": true,
+"name": "caindo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 309 ), ExtResource( 253 ), ExtResource( 179 ), ExtResource( 184 ) ],
+"loop": false,
+"name": "pulando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 176 ) ],
+"loop": false,
+"name": "atk12",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 168 ) ],
+"loop": false,
+"name": "atk4",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 260 ), ExtResource( 290 ) ],
+"loop": false,
+"name": "naparede",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 274 ), ExtResource( 295 ), ExtResource( 179 ), ExtResource( 184 ) ],
+"loop": false,
+"name": "puloparede",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ) ],
+"loop": false,
+"name": "agaixando",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 164 ) ],
+"loop": false,
+"name": "atk7",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 285 ), ExtResource( 255 ), ExtResource( 256 ) ],
+"loop": false,
+"name": "socoPbaixo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 183 ) ],
+"loop": false,
+"name": "atk11",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 178 ) ],
+"loop": false,
+"name": "atk13",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 169 ) ],
+"loop": false,
+"name": "atk5",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 182 ) ],
+"loop": false,
+"name": "atk10",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 177 ) ],
+"loop": false,
+"name": "atk8",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 163 ) ],
+"loop": false,
+"name": "atk6",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 158 ), ExtResource( 159 ), ExtResource( 162 ) ],
+"loop": false,
+"name": "jogarwapon",
+"speed": 100.0
+}, {
+"frames": [ ExtResource( 310 ), ExtResource( 308 ), ExtResource( 251 ), ExtResource( 293 ), ExtResource( 282 ), ExtResource( 296 ), ExtResource( 263 ), ExtResource( 291 ), ExtResource( 301 ), ExtResource( 297 ), ExtResource( 252 ), ExtResource( 269 ), ExtResource( 300 ), ExtResource( 271 ), ExtResource( 273 ), ExtResource( 265 ), ExtResource( 272 ), ExtResource( 299 ), ExtResource( 292 ) ],
+"loop": false,
+"name": "jutsuBolaFogo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 327 ), ExtResource( 326 ) ],
+"loop": false,
+"name": "jutsurept",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ) ],
+"loop": false,
+"name": "chaonaruto",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 32 ), ExtResource( 45 ), ExtResource( 44 ) ],
+"loop": false,
+"name": "mortenaruto",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=23]
+animations = [ {
+"frames": [ ExtResource( 303 ), ExtResource( 303 ), ExtResource( 294 ), ExtResource( 304 ), ExtResource( 311 ), ExtResource( 302 ) ],
+"loop": false,
+"name": "mortesasuke",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ) ],
+"loop": false,
+"name": "chaosasuke",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [ ExtResource( 152 ) ],
+"loop": false,
+"name": "atk1",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 155 ) ],
+"loop": true,
+"name": "atk3",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 154 ) ],
+"loop": true,
+"name": "atk2",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 143 ) ],
+"loop": true,
+"name": "atk9",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 148 ) ],
+"loop": true,
+"name": "atk12",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 113 ) ],
+"loop": true,
+"name": "atk4",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 84 ) ],
+"loop": true,
+"name": "atk7",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 138 ) ],
+"loop": true,
+"name": "atk11",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 147 ) ],
+"loop": true,
+"name": "atk13",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 144 ) ],
+"loop": true,
+"name": "atk5",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 151 ) ],
+"loop": true,
+"name": "atk10",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 141 ) ],
+"loop": true,
+"name": "atk8",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 146 ) ],
+"loop": true,
+"name": "atk6",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 149 ) ],
+"loop": true,
+"name": "atk18",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 129 ) ],
+"loop": true,
+"name": "caindorapo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 124 ), ExtResource( 119 ), ExtResource( 124 ), ExtResource( 119 ), ExtResource( 129 ), ExtResource( 126 ), ExtResource( 129 ), ExtResource( 126 ) ],
+"loop": false,
+"name": "puloparederapo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 156 ) ],
+"loop": true,
+"name": "atk16",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 145 ) ],
+"loop": true,
+"name": "atk17",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 104 ), ExtResource( 120 ), ExtResource( 112 ) ],
+"loop": false,
+"name": "ataquerapo",
+"speed": 100.0
+}, {
+"frames": [ ExtResource( 107 ), ExtResource( 121 ), ExtResource( 72 ), ExtResource( 132 ), ExtResource( 105 ), ExtResource( 134 ), ExtResource( 72 ), ExtResource( 132 ), ExtResource( 105 ), ExtResource( 134 ) ],
+"loop": true,
+"name": "agaixarapo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 131 ), ExtResource( 128 ), ExtResource( 100 ), ExtResource( 115 ), ExtResource( 135 ), ExtResource( 137 ) ],
+"loop": true,
+"name": "correrapo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 75 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 94 ), ExtResource( 101 ) ],
+"loop": true,
+"name": "idlerapo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 123 ), ExtResource( 127 ), ExtResource( 106 ), ExtResource( 82 ), ExtResource( 139 ) ],
+"loop": false,
+"name": "socobaixorapo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 140 ) ],
+"loop": true,
+"name": "atk19",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 114 ), ExtResource( 114 ), ExtResource( 92 ), ExtResource( 75 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 94 ), ExtResource( 101 ) ],
+"loop": false,
+"name": "hitrapo",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 150 ) ],
+"loop": true,
+"name": "atk20",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 133 ), ExtResource( 126 ), ExtResource( 129 ), ExtResource( 126 ), ExtResource( 129 ), ExtResource( 126 ), ExtResource( 129 ) ],
+"loop": false,
+"name": "pulorapo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 122 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ), ExtResource( 69 ), ExtResource( 136 ) ],
+"loop": false,
+"name": "parederapo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 142 ) ],
+"loop": true,
+"name": "atk15",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 153 ) ],
+"loop": true,
+"name": "atk14",
+"speed": 3.5
+} ]
+
+[sub_resource type="SpriteFrames" id=25]
+animations = [ {
+"frames": [ ExtResource( 275 ) ],
+"loop": false,
+"name": "atk1",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 270 ) ],
+"loop": true,
+"name": "atk3",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 306 ) ],
+"loop": true,
+"name": "atk2",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 257 ) ],
+"loop": true,
+"name": "atk9",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 259 ) ],
+"loop": true,
+"name": "atk12",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 307 ) ],
+"loop": true,
+"name": "atk4",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 250 ) ],
+"loop": true,
+"name": "atk7",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 258 ) ],
+"loop": true,
+"name": "atk11",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 261 ) ],
+"loop": true,
+"name": "atk13",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 286 ) ],
+"loop": true,
+"name": "atk5",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 254 ) ],
+"loop": true,
+"name": "atk10",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 277 ) ],
+"loop": true,
+"name": "atk8",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 276 ) ],
+"loop": true,
+"name": "atk6",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 202 ), ExtResource( 220 ), ExtResource( 266 ), ExtResource( 267 ) ],
+"loop": false,
+"name": "puloparededemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 287 ), ExtResource( 280 ) ],
+"loop": false,
+"name": "agaixademon",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 262 ), ExtResource( 264 ), ExtResource( 268 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 323 ) ],
+"loop": true,
+"name": "corredemon",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 315 ), ExtResource( 319 ) ],
+"loop": false,
+"name": "parededemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 321 ), ExtResource( 316 ), ExtResource( 266 ), ExtResource( 267 ) ],
+"loop": false,
+"name": "pulodemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 305 ), ExtResource( 249 ), ExtResource( 281 ) ],
+"loop": false,
+"name": "ataquedemon",
+"speed": 100.0
+}, {
+"frames": [ ExtResource( 331 ), ExtResource( 332 ), ExtResource( 328 ), ExtResource( 329 ), ExtResource( 330 ), ExtResource( 347 ), ExtResource( 337 ), ExtResource( 345 ), ExtResource( 335 ), ExtResource( 340 ), ExtResource( 334 ), ExtResource( 338 ), ExtResource( 344 ), ExtResource( 333 ), ExtResource( 341 ), ExtResource( 339 ), ExtResource( 343 ) ],
+"loop": false,
+"name": "jutsuBolaFogodemon",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 194 ), ExtResource( 210 ), ExtResource( 230 ) ],
+"loop": false,
+"name": "socobaixodemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 346 ), ExtResource( 342 ), ExtResource( 336 ) ],
+"loop": false,
+"name": "jutsureptdemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 322 ), ExtResource( 324 ), ExtResource( 318 ), ExtResource( 325 ), ExtResource( 313 ), ExtResource( 314 ) ],
+"loop": true,
+"name": "idledemon",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 266 ), ExtResource( 267 ) ],
+"loop": true,
+"name": "caindodemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 320 ), ExtResource( 317 ) ],
+"loop": false,
+"name": "hitdemon",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ ExtResource( 125 ), ExtResource( 71 ), ExtResource( 118 ), ExtResource( 125 ), ExtResource( 71 ), ExtResource( 118 ), ExtResource( 125 ), ExtResource( 125 ), ExtResource( 71 ), ExtResource( 118 ), ExtResource( 71 ), ExtResource( 118 ) ],
+"loop": false,
+"name": "chaoraposa",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 117 ), ExtResource( 130 ), ExtResource( 116 ), ExtResource( 125 ), ExtResource( 71 ), ExtResource( 118 ) ],
+"loop": false,
+"name": "morteraposa",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=27]
+animations = [ {
+"frames": [ ExtResource( 231 ), ExtResource( 231 ), ExtResource( 245 ), ExtResource( 241 ), ExtResource( 212 ) ],
+"loop": false,
+"name": "mortedemon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ) ],
+"loop": false,
+"name": "chaodemon",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=28]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 36 ), ExtResource( 42 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ) ],
+"loop": false,
+"name": "Vitoria",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=29]
+animations = [ {
+"frames": [ ExtResource( 222 ), ExtResource( 218 ), ExtResource( 221 ), ExtResource( 224 ), ExtResource( 226 ), ExtResource( 219 ), ExtResource( 244 ), ExtResource( 243 ), ExtResource( 191 ), ExtResource( 237 ), ExtResource( 229 ), ExtResource( 246 ), ExtResource( 248 ), ExtResource( 198 ), ExtResource( 186 ), ExtResource( 192 ), ExtResource( 197 ) ],
+"loop": false,
+"name": "VitoriaSasuke",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=30]
+animations = [ {
+"frames": [ ExtResource( 88 ), ExtResource( 89 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 90 ), ExtResource( 96 ), ExtResource( 98 ), ExtResource( 91 ), ExtResource( 103 ), ExtResource( 99 ), ExtResource( 78 ), ExtResource( 92 ), ExtResource( 75 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 94 ), ExtResource( 101 ), ExtResource( 92 ), ExtResource( 75 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 94 ), ExtResource( 101 ), ExtResource( 92 ) ],
+"loop": false,
+"name": "vitoriarapo",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=31]
+animations = [ {
+"frames": [ ExtResource( 200 ), ExtResource( 217 ), ExtResource( 238 ), ExtResource( 193 ), ExtResource( 195 ), ExtResource( 247 ), ExtResource( 201 ), ExtResource( 196 ), ExtResource( 213 ), ExtResource( 240 ), ExtResource( 239 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 242 ), ExtResource( 233 ), ExtResource( 211 ), ExtResource( 225 ) ],
+"loop": false,
+"name": "vitoriademon",
+"speed": 7.0
+} ]
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ ExtResource( 95 ), ExtResource( 79 ), ExtResource( 33 ), ExtResource( 83 ), ExtResource( 97 ), ExtResource( 81 ), ExtResource( 80 ), ExtResource( 85 ), ExtResource( 74 ), ExtResource( 86 ), ExtResource( 102 ), ExtResource( 93 ), ExtResource( 87 ), ExtResource( 92 ) ],
+"loop": false,
+"name": "transformacao",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=33]
+animations = [ {
+"frames": [ ExtResource( 234 ), ExtResource( 227 ), ExtResource( 215 ), ExtResource( 203 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 208 ), ExtResource( 232 ), ExtResource( 190 ), ExtResource( 199 ), ExtResource( 228 ), ExtResource( 214 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 209 ), ExtResource( 216 ), ExtResource( 223 ) ],
+"loop": false,
+"name": "transformacaodemon",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 43.5671, 56.9355 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 0.0679932, 44.4312 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 8.83936, 17.7652 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 411.462, 198.655 )
+z_index = 2
+
+[node name="Vidas" type="ParallaxBackground" parent="."]
+layer = 50
+
+[node name="Jogador1" type="Sprite" parent="Vidas"]
+visible = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Vidas/Jogador1"]
+margin_left = 85.0
+margin_top = 28.0
+margin_right = 287.0
+margin_bottom = 33.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Vidas/Jogador1"]
+margin_left = 86.3678
+margin_top = 24.1136
+margin_right = 288.368
+margin_bottom = 29.1136
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Furia" type="ProgressBar" parent="Vidas/Jogador1"]
+anchor_left = 0.000410601
+anchor_right = 0.000410616
+margin_left = 90.3429
+margin_top = 73.1441
+margin_right = 255.343
+margin_bottom = 89.1441
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+max_value = 10.0
+step = 1.0
+value = 6.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Furia" type="Label" parent="Vidas/Jogador1/Barra_Furia"]
+anchor_top = -0.000467682
+anchor_bottom = -0.000467682
+margin_left = 127.714
+margin_top = 20.4675
+margin_right = 188.714
+margin_bottom = 44.4675
+rect_scale = Vector2( 1.01346, 1.01346 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Furia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="Vidas/Jogador1/Barra_Furia"]
+modulate = Color( 1, 1, 1, 0.977964 )
+margin_left = 85.0704
+margin_top = 23.4315
+margin_right = 240.07
+margin_bottom = 66.4315
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+bbcode_text = "
+      Pressione   L "
+text = "
+      Pressione   L "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Vida" type="ProgressBar" parent="Vidas/Jogador1"]
+anchor_left = -0.000205301
+margin_left = 90.3435
+margin_top = 55.1441
+margin_right = 375.133
+margin_bottom = 73.1441
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
+max_value = 7.0
+step = 1.0
+value = 2.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Vida" type="Label" parent="Vidas/Jogador1/Barra_Vida"]
+margin_left = 242.58
+margin_top = 24.4835
+margin_right = 282.58
+margin_bottom = 43.4835
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Vida"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rosto_naruto_raposa1" type="Sprite" parent="Vidas/Jogador1"]
+position = Vector2( 55.1447, 81.6858 )
+scale = Vector2( 0.137893, 0.14814 )
+texture = ExtResource( 110 )
+
+[node name="Naruto" type="Sprite" parent="Vidas/Jogador1"]
+position = Vector2( 55.2761, 81.555 )
+scale = Vector2( 0.0749003, 0.0863645 )
+texture = ExtResource( 109 )
+
+[node name="Barra" type="Sprite" parent="Vidas/Jogador1"]
+position = Vector2( 266.182, 76.837 )
+scale = Vector2( 1.34122, 1.34122 )
+texture = ExtResource( 108 )
+
+[node name="Jogador 1_1" type="Sprite" parent="Vidas"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Vidas/Jogador 1_1"]
+margin_left = 85.0
+margin_top = 28.0
+margin_right = 269.0
+margin_bottom = 33.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Vidas/Jogador 1_1"]
+margin_left = 86.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 29.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Furia" type="ProgressBar" parent="Vidas/Jogador 1_1"]
+anchor_left = 0.000410601
+anchor_right = 0.000410616
+margin_left = 90.3429
+margin_top = 73.1441
+margin_right = 255.343
+margin_bottom = 89.1441
+custom_styles/fg = SubResource( 8 )
+custom_styles/bg = SubResource( 9 )
+max_value = 10.0
+step = 1.0
+value = 6.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Furia" type="Label" parent="Vidas/Jogador 1_1/Barra_Furia"]
+anchor_top = -0.000467682
+anchor_bottom = -0.000467682
+margin_left = 127.714
+margin_top = 20.4675
+margin_right = 188.714
+margin_bottom = 44.4675
+rect_scale = Vector2( 1.01346, 1.01346 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Furia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="Vidas/Jogador 1_1/Barra_Furia"]
+modulate = Color( 1, 1, 1, 0.977964 )
+margin_left = 85.0704
+margin_top = 23.4315
+margin_right = 240.07
+margin_bottom = 66.4315
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+bbcode_text = "
+      Pressione   L "
+text = "
+      Pressione   L "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Vida" type="ProgressBar" parent="Vidas/Jogador 1_1"]
+anchor_left = -0.000205301
+margin_left = 90.3435
+margin_top = 55.1441
+margin_right = 375.133
+margin_bottom = 73.1441
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
+max_value = 7.0
+step = 1.0
+value = 2.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Vida" type="Label" parent="Vidas/Jogador 1_1/Barra_Vida"]
+margin_left = 242.58
+margin_top = 24.4835
+margin_right = 282.58
+margin_bottom = 43.4835
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Vida"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SasukeDemon" type="Sprite" parent="Vidas/Jogador 1_1"]
+position = Vector2( 55.1447, 81.6858 )
+scale = Vector2( 0.249537, 0.268081 )
+texture = ExtResource( 67 )
+
+[node name="Sasuke" type="Sprite" parent="Vidas/Jogador 1_1"]
+position = Vector2( 55.129, 85.039 )
+scale = Vector2( 0.231512, 0.234941 )
+texture = ExtResource( 68 )
+
+[node name="Barra" type="Sprite" parent="Vidas/Jogador 1_1"]
+position = Vector2( 266.182, 76.837 )
+scale = Vector2( 1.34122, 1.34122 )
+texture = ExtResource( 66 )
+
+[node name="Jogador2" type="Sprite" parent="Vidas"]
+visible = false
+position = Vector2( 301.739, 214.754 )
+scale = Vector2( 0.72, 0.72 )
+
+[node name="ColorRect" type="ColorRect" parent="Vidas/Jogador2"]
+margin_left = -320.0
+margin_top = -277.0
+margin_right = -118.0
+margin_bottom = -272.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Vidas/Jogador2"]
+margin_left = -321.0
+margin_top = -159.0
+margin_right = -134.0
+margin_bottom = -154.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Vidas/Jogador2"]
+margin_left = -322.0
+margin_top = -273.0
+margin_right = -120.0
+margin_bottom = -268.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Vidas/Jogador2"]
+margin_left = -323.0
+margin_top = -154.0
+margin_right = -136.0
+margin_bottom = -149.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Vida2" type="ProgressBar" parent="Vidas/Jogador2"]
+anchor_left = -0.000205301
+margin_left = -317.644
+margin_top = -128.856
+margin_right = -32.8541
+margin_bottom = -110.856
+custom_styles/fg = SubResource( 10 )
+custom_styles/bg = SubResource( 11 )
+max_value = 7.0
+step = 1.0
+value = 2.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Vida2" type="Label" parent="Vidas/Jogador2/Barra_Vida2"]
+margin_left = 242.58
+margin_top = 24.4835
+margin_right = 282.58
+margin_bottom = 43.4835
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Vida"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Furia2" type="ProgressBar" parent="Vidas/Jogador2"]
+anchor_left = 0.000410601
+anchor_right = 0.000410616
+margin_left = -317.026
+margin_top = -111.0
+margin_right = -152.026
+margin_bottom = -95.0
+custom_styles/fg = SubResource( 12 )
+custom_styles/bg = SubResource( 13 )
+max_value = 10.0
+step = 1.0
+value = 6.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Furia2" type="Label" parent="Vidas/Jogador2/Barra_Furia2"]
+anchor_top = -0.000467682
+anchor_bottom = -0.000467682
+margin_left = 127.714
+margin_top = 20.4675
+margin_right = 188.714
+margin_bottom = 44.4675
+rect_scale = Vector2( 1.01346, 1.01346 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Furia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="RichTextLabel" parent="Vidas/Jogador2/Barra_Furia2"]
+modulate = Color( 1, 1, 1, 0.977964 )
+margin_left = 85.0704
+margin_top = 23.4315
+margin_right = 240.07
+margin_bottom = 66.4315
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+bbcode_text = "
+      Pressione   9"
+text = "
+      Pressione   9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SasukeDemon" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -352.855, -102.314 )
+scale = Vector2( 0.257663, 0.27681 )
+texture = ExtResource( 67 )
+
+[node name="Sasuke" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -352.507, -102.12 )
+scale = Vector2( 0.207236, 0.21829 )
+texture = ExtResource( 68 )
+
+[node name="BarraSasuke" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -141.818, -107.163 )
+scale = Vector2( 1.34122, 1.34122 )
+texture = ExtResource( 66 )
+
+[node name="Barra_Vida1" type="ProgressBar" parent="Vidas/Jogador2"]
+anchor_left = -0.000205301
+margin_left = -317.644
+margin_top = -248.003
+margin_right = -32.8542
+margin_bottom = -230.003
+custom_styles/fg = SubResource( 14 )
+custom_styles/bg = SubResource( 15 )
+max_value = 7.0
+step = 1.0
+value = 2.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Vida1" type="Label" parent="Vidas/Jogador2/Barra_Vida1"]
+margin_left = 242.58
+margin_top = 24.4835
+margin_right = 282.58
+margin_bottom = 43.4835
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Vida"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_Furia1" type="ProgressBar" parent="Vidas/Jogador2"]
+anchor_left = 0.000410601
+anchor_right = 0.000410616
+margin_left = -317.026
+margin_top = -230.147
+margin_right = -152.026
+margin_bottom = -214.147
+custom_styles/fg = SubResource( 16 )
+custom_styles/bg = SubResource( 17 )
+max_value = 10.0
+step = 1.0
+value = 6.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Furia1" type="Label" parent="Vidas/Jogador2/Barra_Furia1"]
+anchor_top = -0.000467682
+anchor_bottom = -0.000467682
+margin_left = 127.714
+margin_top = 20.4675
+margin_right = 188.714
+margin_bottom = 44.4675
+rect_scale = Vector2( 1.01346, 1.01346 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Furia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label1" type="RichTextLabel" parent="Vidas/Jogador2/Barra_Furia1"]
+modulate = Color( 1, 1, 1, 0.977964 )
+margin_left = 85.0705
+margin_top = 19.3428
+margin_right = 240.07
+margin_bottom = 62.3428
+custom_fonts/normal_font = SubResource( 18 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+bbcode_text = "
+      Pressione   L "
+text = "
+      Pressione   L "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rosto_naruto_raposa1" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -352.855, -221.592 )
+scale = Vector2( 0.137093, 0.14728 )
+texture = ExtResource( 110 )
+
+[node name="Naruto1" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -353.244, -220.637 )
+scale = Vector2( 0.0741882, 0.0855434 )
+texture = ExtResource( 109 )
+
+[node name="BarraNaruto" type="Sprite" parent="Vidas/Jogador2"]
+position = Vector2( -141.818, -226.31 )
+scale = Vector2( 1.34122, 1.34122 )
+texture = ExtResource( 108 )
+
+[node name="Node2D" parent="Vidas" instance=ExtResource( 31 )]
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Vidas"]
+autoplay = "pulse"
+anims/pulse = SubResource( 19 )
+
+[node name="Personagem" type="KinematicBody2D" parent="." groups=[
+"Personagem",
+]]
+position = Vector2( 42.0752, 45.3642 )
+scale = Vector2( 0.519, 0.519 )
+collision_layer = 3
+collision_mask = 2147483651
+script = ExtResource( 21 )
+
+[node name="TempoTransformado" type="Timer" parent="Personagem"]
+wait_time = 10.0
+
+[node name="Camera2D" type="Camera2D" parent="Personagem"]
+current = true
+
+[node name="Boladefogo" type="Position2D" parent="Personagem"]
+position = Vector2( 72.2209, -12.1379 )
+rotation = 3.14159
+scale = Vector2( 0.276432, 0.276432 )
+
+[node name="Naruto" type="AnimatedSprite" parent="Personagem"]
+visible = false
+scale = Vector2( 2.349, 2.349 )
+frames = SubResource( 20 )
+animation = "socoPbaixo"
+
+[node name="Sasuke" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -87.1963, -128.069 )
+scale = Vector2( 2.349, 2.349 )
+frames = SubResource( 21 )
+animation = "agaixando"
+centered = false
+
+[node name="MorteNaruto" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -10.204, 16.3047 )
+scale = Vector2( 2.18722, 2.18722 )
+frames = SubResource( 22 )
+animation = "mortenaruto"
+
+[node name="MorteSasuke" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -10.204, 16.3047 )
+scale = Vector2( 2.18722, 2.18722 )
+frames = SubResource( 23 )
+animation = "mortesasuke"
+
+[node name="Raposa" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -30.1808, -77.3691 )
+scale = Vector2( 2.23963, 2.23963 )
+frames = SubResource( 24 )
+animation = "socobaixorapo"
+
+[node name="Demon" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -83.1679, -118.461 )
+scale = Vector2( 2.23963, 2.23963 )
+frames = SubResource( 25 )
+animation = "parededemon"
+frame = 1
+centered = false
+
+[node name="MorteRaposa" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( 44.4996, -71.0767 )
+scale = Vector2( 2.21773, 2.21773 )
+frames = SubResource( 26 )
+animation = "morteraposa"
+
+[node name="MorteDemon" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( 0.953003, -21.1868 )
+scale = Vector2( 2.21773, 2.21773 )
+frames = SubResource( 27 )
+animation = "mortedemon"
+
+[node name="Vitoria" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( 0, -35.1678 )
+scale = Vector2( 2.34241, 2.34241 )
+frames = SubResource( 28 )
+animation = "Vitoria"
+
+[node name="VitoriaSasuke" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -43.6967, -128.63 )
+scale = Vector2( 2.34241, 2.34241 )
+frames = SubResource( 29 )
+animation = "VitoriaSasuke"
+centered = false
+
+[node name="VitoriaRapo" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( 5.67807, -86.5852 )
+scale = Vector2( 2.49609, 2.49609 )
+frames = SubResource( 30 )
+animation = "vitoriarapo"
+
+[node name="VitoriaDemon" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -101.302, -131.888 )
+scale = Vector2( 2.49609, 2.49609 )
+frames = SubResource( 31 )
+animation = "vitoriademon"
+centered = false
+
+[node name="Shuriken" type="Position2D" parent="Personagem"]
+position = Vector2( 44.2534, 18.4565 )
+scale = Vector2( 0.260588, 0.260588 )
+
+[node name="Transformacao" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -29.241, -76.0175 )
+scale = Vector2( 2.23011, 2.23011 )
+frames = SubResource( 32 )
+animation = "transformacao"
+
+[node name="TransformacaoDemon" type="AnimatedSprite" parent="Personagem"]
+visible = false
+position = Vector2( -97.2135, -111.218 )
+scale = Vector2( 2.23011, 2.23011 )
+frames = SubResource( 33 )
+animation = "transformacaodemon"
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem"]
+position = Vector2( -3.03821, 2.95123 )
+shape = SubResource( 34 )
+one_way_collision = true
+
+[node name="HitD" type="Area2D" parent="Personagem"]
+position = Vector2( 18.4507, 10.1763 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem/HitD"]
+shape = SubResource( 35 )
+
+[node name="HitE" type="Area2D" parent="Personagem"]
+position = Vector2( -44.3228, 8.96869 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem/HitE"]
+shape = SubResource( 35 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Personagem"]
+position = Vector2( 0, 3.05176e-05 )
+rotation = -1.5708
+enabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Personagem"]
+stream = ExtResource( 30 )
+volume_db = -15.0
+
+[node name="MusicaMultOn" type="AudioStreamPlayer" parent="Personagem"]
+stream = ExtResource( 62 )
+volume_db = -15.0
+
+[node name="ShurikenSom" type="AudioStreamPlayer" parent="Personagem"]
+stream = ExtResource( 48 )
+volume_db = -10.0
+
+[node name="Selec" type="AudioStreamPlayer" parent="Personagem"]
+volume_db = -10.0
+
+[node name="Press" type="AudioStreamPlayer" parent="Personagem"]
+volume_db = -10.0
+
+[node name="Jutsu" type="AudioStreamPlayer" parent="Personagem"]
+stream = ExtResource( 349 )
+volume_db = -20.0
+
+[node name="Area_socos" type="Area2D" parent="Personagem"]
+position = Vector2( 53.226, -8.91983 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Colis_socos" type="CollisionShape2D" parent="Personagem/Area_socos"]
+shape = SubResource( 36 )
+
+[node name="PersoSasuke" type="KinematicBody2D" parent="." groups=[
+"Personagem",
+]]
+position = Vector2( -42.498, 44.4089 )
+scale = Vector2( 0.519, 0.519 )
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 348 )
+
+[node name="TempoTransformado" type="Timer" parent="PersoSasuke"]
+wait_time = 10.0
+
+[node name="Boladefogo" type="Position2D" parent="PersoSasuke"]
+position = Vector2( 72.2209, -12.1379 )
+rotation = 3.14159
+scale = Vector2( 0.276432, 0.276432 )
+
+[node name="Sasuke" type="AnimatedSprite" parent="PersoSasuke"]
+position = Vector2( -87.1963, -128.069 )
+scale = Vector2( 2.349, 2.349 )
+frames = SubResource( 21 )
+animation = "jutsurept"
+centered = false
+
+[node name="MorteSasuke" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( -10.204, 16.3047 )
+scale = Vector2( 2.18722, 2.18722 )
+frames = SubResource( 23 )
+animation = "mortesasuke"
+
+[node name="Demon" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( -83.1679, -118.461 )
+scale = Vector2( 2.23963, 2.23963 )
+frames = SubResource( 25 )
+animation = "jutsuBolaFogodemon"
+centered = false
+
+[node name="MorteDemon" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( 0.953003, -21.1868 )
+scale = Vector2( 2.21773, 2.21773 )
+frames = SubResource( 27 )
+animation = "mortedemon"
+
+[node name="VitoriaSasuke" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( -43.6967, -128.63 )
+scale = Vector2( 2.34241, 2.34241 )
+frames = SubResource( 29 )
+animation = "VitoriaSasuke"
+centered = false
+
+[node name="VitoriaDemon" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( -101.302, -131.888 )
+scale = Vector2( 2.49609, 2.49609 )
+frames = SubResource( 31 )
+animation = "vitoriademon"
+centered = false
+
+[node name="Shuriken" type="Position2D" parent="PersoSasuke"]
+position = Vector2( 44.2534, 18.4565 )
+scale = Vector2( 0.260588, 0.260588 )
+
+[node name="TransformacaoDemon" type="AnimatedSprite" parent="PersoSasuke"]
+visible = false
+position = Vector2( -97.2135, -111.218 )
+scale = Vector2( 2.23011, 2.23011 )
+frames = SubResource( 33 )
+animation = "transformacaodemon"
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PersoSasuke"]
+position = Vector2( -3.03821, 2.95123 )
+shape = SubResource( 34 )
+one_way_collision = true
+
+[node name="HitD" type="Area2D" parent="PersoSasuke"]
+position = Vector2( 18.4507, 10.1763 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PersoSasuke/HitD"]
+shape = SubResource( 35 )
+
+[node name="HitE" type="Area2D" parent="PersoSasuke"]
+position = Vector2( -44.3228, 8.96869 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PersoSasuke/HitE"]
+shape = SubResource( 35 )
+
+[node name="RayCast2D" type="RayCast2D" parent="PersoSasuke"]
+position = Vector2( 0, 3.05176e-05 )
+rotation = -1.5708
+enabled = true
+
+[node name="ShurikenSom" type="AudioStreamPlayer" parent="PersoSasuke"]
+stream = ExtResource( 48 )
+volume_db = -10.0
+
+[node name="Jutsu" type="AudioStreamPlayer" parent="PersoSasuke"]
+stream = ExtResource( 349 )
+volume_db = -20.0
+
+[node name="Area_socos" type="Area2D" parent="PersoSasuke"]
+position = Vector2( 53.226, -8.91983 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Colis_socos" type="CollisionShape2D" parent="PersoSasuke/Area_socos"]
+shape = SubResource( 36 )
+[connection signal="timeout" from="Personagem/TempoTransformado" to="Personagem" method="_on_TempoTransformado_timeout"]
+[connection signal="animation_finished" from="Personagem/Naruto" to="Personagem" method="_on_Naruto_animation_finished"]
+[connection signal="animation_finished" from="Personagem/Sasuke" to="Personagem" method="_on_Sasuke_animation_finished"]
+[connection signal="animation_finished" from="Personagem/MorteNaruto" to="Personagem" method="_on_MorteNaruto_animation_finished"]
+[connection signal="animation_finished" from="Personagem/MorteSasuke" to="Personagem" method="_on_MorteSasuke_animation_finished"]
+[connection signal="animation_finished" from="Personagem/Raposa" to="Personagem" method="_on_Raposa_animation_finished"]
+[connection signal="animation_finished" from="Personagem/Demon" to="Personagem" method="_on_Demon_animation_finished"]
+[connection signal="animation_finished" from="Personagem/MorteRaposa" to="Personagem" method="_on_MorteRaposa_animation_finished"]
+[connection signal="animation_finished" from="Personagem/MorteDemon" to="Personagem" method="_on_MorteDemon_animation_finished"]
+[connection signal="animation_finished" from="Personagem/Vitoria" to="Personagem" method="_on_Vitoria_animation_finished"]
+[connection signal="animation_finished" from="Personagem/VitoriaSasuke" to="Personagem" method="_on_VitoriaSasuke_animation_finished"]
+[connection signal="animation_finished" from="Personagem/VitoriaRapo" to="Personagem" method="_on_VitoriaRapo_animation_finished"]
+[connection signal="animation_finished" from="Personagem/VitoriaDemon" to="Personagem" method="_on_VitoriaDemon_animation_finished"]
+[connection signal="animation_finished" from="Personagem/Transformacao" to="Personagem" method="_on_Transformacao_animation_finished"]
+[connection signal="animation_finished" from="Personagem/TransformacaoDemon" to="Personagem" method="_on_TransformacaoDemon_animation_finished"]
+[connection signal="area_entered" from="Personagem/HitD" to="Personagem" method="_on_HitD_area_entered"]
+[connection signal="area_entered" from="Personagem/HitE" to="Personagem" method="_on_HitE_area_entered"]
+[connection signal="finished" from="Personagem/AudioStreamPlayer" to="Personagem" method="_on_AudioStreamPlayer_finished"]
+[connection signal="finished" from="Personagem/MusicaMultOn" to="Personagem" method="_on_MusicaMultOn_finished"]
+[connection signal="timeout" from="PersoSasuke/TempoTransformado" to="PersoSasuke" method="_on_TempoTransformado_timeout"]
+[connection signal="animation_finished" from="PersoSasuke/Sasuke" to="PersoSasuke" method="_on_Sasuke_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/MorteSasuke" to="PersoSasuke" method="_on_MorteSasuke_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/Demon" to="PersoSasuke" method="_on_Demon_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/MorteDemon" to="PersoSasuke" method="_on_MorteDemon_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/VitoriaSasuke" to="PersoSasuke" method="_on_VitoriaSasuke_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/VitoriaDemon" to="PersoSasuke" method="_on_VitoriaDemon_animation_finished"]
+[connection signal="animation_finished" from="PersoSasuke/TransformacaoDemon" to="PersoSasuke" method="_on_TransformacaoDemon_animation_finished"]
+[connection signal="area_entered" from="PersoSasuke/HitD" to="PersoSasuke" method="_on_HitD_area_entered"]
+[connection signal="area_entered" from="PersoSasuke/HitE" to="PersoSasuke" method="_on_HitE_area_entered"]

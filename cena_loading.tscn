@@ -1,0 +1,181 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Imagens/bandana3.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/bandana1.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/bandana2.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo2.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo5.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo6.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo4.png" type="Texture" id=7]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo3.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/loading2.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/loading1.png" type="Texture" id=10]
+[ext_resource path="res://Imagens/loading3.png" type="Texture" id=11]
+[ext_resource path="res://Imagens/loading0.png" type="Texture" id=12]
+[ext_resource path="res://Imagens/animaçoes/sasuke/correndo1.png" type="Texture" id=13]
+[ext_resource path="res://Imagens/animaçoes/correr2.png" type="Texture" id=14]
+[ext_resource path="res://Imagens/animaçoes/correr3.png" type="Texture" id=15]
+[ext_resource path="res://Imagens/animaçoes/correr4.png" type="Texture" id=16]
+[ext_resource path="res://Imagens/animaçoes/correr5.png" type="Texture" id=17]
+[ext_resource path="res://Imagens/animaçoes/correr1.png" type="Texture" id=18]
+[ext_resource path="res://Imagens/animaçoes/correr6.png" type="Texture" id=19]
+[ext_resource path="res://Imagens/Loading Mult.png" type="Texture" id=20]
+[ext_resource path="res://Imagens/Loading Naruto.png" type="Texture" id=21]
+[ext_resource path="res://Imagens/Loading Sasuke.png" type="Texture" id=22]
+[ext_resource path="res://script_cena_loading.gd" type="Script" id=23]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "bandana",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "loading",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "naruto",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "naruto",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "sasuke",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "sasuke",
+"speed": 10.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 23 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -16.0
+margin_top = -13.0
+margin_right = 1041.0
+margin_bottom = 599.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Loading_Mult" type="Sprite" parent="ColorRect"]
+visible = false
+modulate = Color( 1, 1, 1, 0.745098 )
+position = Vector2( 525.92, 312.709 )
+scale = Vector2( 2.28154, 2.11412 )
+texture = ExtResource( 20 )
+
+[node name="Loading_Naruto" type="Sprite" parent="ColorRect"]
+visible = false
+modulate = Color( 1, 1, 1, 0.745098 )
+position = Vector2( 529.389, 311.076 )
+scale = Vector2( 1.14067, 0.988887 )
+texture = ExtResource( 21 )
+
+[node name="Loading_Sasuke" type="Sprite" parent="ColorRect"]
+visible = false
+modulate = Color( 1, 1, 1, 0.745098 )
+position = Vector2( 528.298, 311.49 )
+scale = Vector2( 1.14287, 0.992142 )
+texture = ExtResource( 22 )
+
+[node name="Label" type="Label" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -204.5
+margin_top = -107.0
+margin_right = 215.5
+margin_bottom = 121.0
+custom_styles/normal = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bandana" type="AnimatedSprite" parent="ColorRect"]
+position = Vector2( 447.159, 387.828 )
+scale = Vector2( 2.05518, 2.05518 )
+frames = SubResource( 2 )
+animation = "bandana"
+playing = true
+
+[node name="Loading" type="AnimatedSprite" parent="ColorRect"]
+position = Vector2( 617.314, 378.309 )
+scale = Vector2( 0.636245, 0.636245 )
+frames = SubResource( 3 )
+animation = "loading"
+frame = 1
+playing = true
+
+[node name="Naruto" type="AnimatedSprite" parent="ColorRect"]
+visible = false
+position = Vector2( 547.747, 312.08 )
+scale = Vector2( 1.66446, 1.66446 )
+frames = SubResource( 4 )
+animation = "naruto"
+frame = 2
+playing = true
+
+[node name="Naruto_mult" type="AnimatedSprite" parent="ColorRect"]
+visible = false
+position = Vector2( 520.395, 308.512 )
+scale = Vector2( 1.66446, 1.66446 )
+frames = SubResource( 5 )
+animation = "naruto"
+frame = 1
+playing = true
+
+[node name="Sasuke" type="AnimatedSprite" parent="ColorRect"]
+visible = false
+position = Vector2( 538.12, 281.871 )
+scale = Vector2( 1.66446, 1.66446 )
+frames = SubResource( 6 )
+animation = "sasuke"
+frame = 4
+playing = true
+
+[node name="Sasuke_mult" type="AnimatedSprite" parent="ColorRect"]
+visible = false
+position = Vector2( 594.013, 275.925 )
+scale = Vector2( 1.66446, 1.66446 )
+frames = SubResource( 7 )
+animation = "sasuke"
+frame = 3
+playing = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

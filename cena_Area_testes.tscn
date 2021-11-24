@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://cena_personagem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cena_inimigo.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 465.007, 10 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 326.655, 346.518 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 735.062, 400.506 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 716.212, 256.979 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 576.644, 444.796 )
+shape = SubResource( 1 )

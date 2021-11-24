@@ -1,0 +1,179 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://cena_inimigo.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Imagens/animaçoes/inimigo/morteinimigo4.png" type="Texture" id=2]
+[ext_resource path="res://script_inimigo.gd" type="Script" id=5]
+[ext_resource path="res://Imagens/animaçoes/inimigo/morteinimigo8.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "nacabeca",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": false,
+"name": "inimigochao",
+"speed": 100.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 12.702, 0.0250854 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 0.0143433, 23.4702 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 179.384, 33.3507 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 11.0556, 0.00775146 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 5.55069, 21.9692 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 564.442, 338.431 )
+scale = Vector2( 0.72, 0.72 )
+z_index = 4
+
+[node name="Inimigo" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 6.83228, 0 )
+scale = Vector2( 1.64, 1.64 )
+collision_layer = 6
+collision_mask = 6
+script = ExtResource( 5 )
+
+[node name="Inimigoani" type="AnimatedSprite" parent="Inimigo"]
+position = Vector2( 0, -1.52588e-05 )
+frames = ExtResource( 1 )
+animation = "inimigoparado"
+frame = 3
+playing = true
+
+[node name="InimigoChao" type="AnimatedSprite" parent="Inimigo"]
+position = Vector2( 2.98023e-08, -0.0704651 )
+frames = SubResource( 1 )
+animation = "nacabeca"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo"]
+position = Vector2( -4.16607, 22.4467 )
+scale = Vector2( 0.863, 1 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="colis_cabeca" type="CollisionShape2D" parent="Inimigo"]
+position = Vector2( -4.09129, -22.1108 )
+scale = Vector2( 0.862841, 1 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="Position2D" type="Position2D" parent="Inimigo"]
+position = Vector2( -15.7598, 2.79688 )
+scale = Vector2( 0.0243556, 0.0244007 )
+
+[node name="Position2D2" type="Position2D" parent="Inimigo"]
+position = Vector2( 7.63086, 2.79688 )
+scale = Vector2( 0.0243556, 0.0244007 )
+
+[node name="LdE" type="Area2D" parent="Inimigo"]
+position = Vector2( -15.0569, -1.52588e-05 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/LdE"]
+position = Vector2( 0.0020752, 0.0037384 )
+shape = SubResource( 3 )
+
+[node name="LdD" type="Area2D" parent="Inimigo"]
+position = Vector2( 6.83527, 0.00372314 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/LdD"]
+position = Vector2( -3.05176e-05, 0 )
+shape = SubResource( 3 )
+
+[node name="ZonaDetc" type="Area2D" parent="Inimigo"]
+position = Vector2( -114.638, 0.00372314 )
+scale = Vector2( 0.609756, 0.609756 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/ZonaDetc"]
+position = Vector2( 0.122559, -0.00613403 )
+shape = SubResource( 4 )
+
+[node name="ZonaDetc2" type="Area2D" parent="Inimigo"]
+position = Vector2( 104.176, -0.00378418 )
+scale = Vector2( 0.609756, 0.609756 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/ZonaDetc2"]
+shape = SubResource( 4 )
+
+[node name="Cabeca" type="Area2D" parent="Inimigo"]
+position = Vector2( -4.09128, -22.3061 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/Cabeca"]
+shape = SubResource( 5 )
+
+[node name="ECorpo_inimigo" type="Area2D" parent="Inimigo"]
+position = Vector2( -9.51172, 0.0037384 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/ECorpo_inimigo"]
+shape = SubResource( 6 )
+
+[node name="DCorpo_inimigo" type="Area2D" parent="Inimigo"]
+position = Vector2( 1.2742, -0.0704498 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo/DCorpo_inimigo"]
+shape = SubResource( 6 )
+
+[node name="TempoAtk" type="Timer" parent="Inimigo"]
+wait_time = 2.5
+[connection signal="animation_finished" from="Inimigo/Inimigoani" to="Inimigo" method="_on_Inimigoani_animation_finished"]
+[connection signal="animation_finished" from="Inimigo/InimigoChao" to="Inimigo" method="_on_InimigoChao_animation_finished"]
+[connection signal="area_entered" from="Inimigo/LdE" to="Inimigo" method="_on_LdE_area_entered"]
+[connection signal="area_entered" from="Inimigo/LdD" to="Inimigo" method="_on_LdD_area_entered"]
+[connection signal="body_entered" from="Inimigo/ZonaDetc" to="Inimigo" method="_on_ZonaDetc_body_entered"]
+[connection signal="body_exited" from="Inimigo/ZonaDetc" to="Inimigo" method="_on_ZonaDetc_body_exited"]
+[connection signal="body_entered" from="Inimigo/ZonaDetc2" to="Inimigo" method="_on_ZonaDetc2_body_entered"]
+[connection signal="body_exited" from="Inimigo/ZonaDetc2" to="Inimigo" method="_on_ZonaDetc2_body_exited"]
+[connection signal="body_entered" from="Inimigo/Cabeca" to="Inimigo" method="_on_Cabeca_body_entered"]
+[connection signal="area_entered" from="Inimigo/ECorpo_inimigo" to="Inimigo" method="_on_ECorpo_inimigo_area_entered"]
+[connection signal="body_entered" from="Inimigo/ECorpo_inimigo" to="Inimigo" method="_on_ECorpo_inimigo_body_entered"]
+[connection signal="area_entered" from="Inimigo/DCorpo_inimigo" to="Inimigo" method="_on_DCorpo_inimigo_area_entered"]
+[connection signal="body_entered" from="Inimigo/DCorpo_inimigo" to="Inimigo" method="_on_DCorpo_inimigo_body_entered"]
+[connection signal="timeout" from="Inimigo/TempoAtk" to="Inimigo" method="_on_TempoAtk_timeout"]

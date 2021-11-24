@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Imagens/background/Hot Spring Stage2 ponte.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/background/Hot Spring Stage2.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/background/Hot Spring Stage1.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 512.476, 1.62689 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Hot Spring Stage1" type="Sprite" parent="."]
+position = Vector2( 576.063, 243.402 )
+scale = Vector2( 1.45149, 1.45149 )
+texture = ExtResource( 4 )
+
+[node name="Hot Spring Stage2" type="Sprite" parent="."]
+position = Vector2( 512.336, 225.271 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 524.617, 557.029 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -13, 0 )
+shape = SubResource( 1 )
+
+[node name="Hot Spring Stage2 ponte" type="Sprite" parent="."]
+position = Vector2( 512.181, 224.765 )
+z_index = 20
+texture = ExtResource( 2 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/selec_person.wav-330231d091702be0a1654fd08da3ba6e.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/selec_person.wav"
+dest_files=[ "res://.import/selec_person.wav-330231d091702be0a1654fd08da3ba6e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

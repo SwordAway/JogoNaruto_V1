@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GUI_Select_29 1 - selec person.wav-bba398219e6480e23f4bfc3c37a77001.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/BIG5AUDIO_UI & UX_FINAL/03_Select/GUI_Select_29 1 - selec person.wav"
+dest_files=[ "res://.import/GUI_Select_29 1 - selec person.wav-bba398219e6480e23f4bfc3c37a77001.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://cena_disparo_inimigo.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://script_ataque_inimigo.gd" type="Script" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 16.0
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 32, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FoiceE" type="Area2D" parent="."]
+position = Vector2( -5.31091, -2.68909 )
+collision_layer = 7
+collision_mask = 7
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="FoiceE"]
+scale = Vector2( 1.06555, 1.06555 )
+frames = ExtResource( 1 )
+animation = "foice"
+playing = true
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FoiceE"]
+shape = SubResource( 1 )
+
+[node name="FoiceE2" type="Area2D" parent="FoiceE"]
+position = Vector2( 13.3109, -8.00001 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="FoiceE/FoiceE2"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="FoiceE/FoiceE2"]
+scale = Vector2( 1.06555, 1.06555 )
+frames = ExtResource( 1 )
+animation = "foice"
+frame = 1
+playing = true
+flip_h = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+[connection signal="area_entered" from="FoiceE" to="FoiceE" method="_on_FoiceE_area_entered"]
+[connection signal="body_entered" from="FoiceE" to="FoiceE" method="_on_FoiceE_body_entered"]
+[connection signal="timeout" from="Timer" to="FoiceE" method="_on_Timer_timeout"]

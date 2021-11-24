@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GUI_Notification 16 1 - usar para popup.wav-55ffc49b8fbfb315fccb4277c0f5a12e.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/BIG5AUDIO_UI & UX_FINAL/02_Notification/GUI_Notification 16 1 - usar para popup.wav"
+dest_files=[ "res://.import/GUI_Notification 16 1 - usar para popup.wav-55ffc49b8fbfb315fccb4277c0f5a12e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

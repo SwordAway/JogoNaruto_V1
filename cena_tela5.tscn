@@ -1,0 +1,321 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://cena_inimigo.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Imagens/background/Forest of Spiders1.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/background/Forest of Spiders3.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/background/Forest of Spiders5.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/background/Forest of Spiders4.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/background/Forest of Spiders8.png" type="Texture" id=7]
+[ext_resource path="res://Imagens/background/Forest of Spiders2.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/background/Forest of Spiders6.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/background/Forest of Spiders7.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 482.102, 8.00804 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 513.774, 3.728 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 153.403, 10.2106 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 513.774, 4.65161 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 411.861, 7.96625 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 397.271, 24.1681 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 512.666, 24.1681 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Forest of Spiders1" type="Sprite" parent="."]
+position = Vector2( 767.714, 255.532 )
+texture = ExtResource( 3 )
+
+[node name="Forest of Spiders2" type="Sprite" parent="."]
+position = Vector2( 767.015, -254.388 )
+texture = ExtResource( 3 )
+
+[node name="Forest of Spiders9" type="Sprite" parent="."]
+position = Vector2( 259.172, 257.007 )
+texture = ExtResource( 3 )
+
+[node name="Forest of Spiders10" type="Sprite" parent="."]
+position = Vector2( 259.385, -254.51 )
+texture = ExtResource( 3 )
+
+[node name="Forest of Spiders6" type="Sprite" parent="."]
+position = Vector2( 707.967, 514.463 )
+texture = ExtResource( 6 )
+
+[node name="Forest of Spiders14" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 198.845, -702.213 )
+rotation = 1.57079
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders15" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 124.223, -700.254 )
+rotation = 1.57079
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders11" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 259.304, -183.155 )
+texture = ExtResource( 9 )
+flip_h = true
+
+[node name="Forest of Spiders12" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 259.132, -413.268 )
+texture = ExtResource( 9 )
+flip_h = true
+
+[node name="Forest of Spiders13" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 259.103, -641.883 )
+texture = ExtResource( 9 )
+flip_h = true
+
+[node name="Forest of Spiders2" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( -0.0504761, -65.7107 )
+texture = ExtResource( 8 )
+
+[node name="Forest of Spiders3" type="Sprite" parent="Forest of Spiders6"]
+position = Vector2( 0.272217, 73.0016 )
+texture = ExtResource( 4 )
+
+[node name="Forest of Spiders17" type="Sprite" parent="."]
+position = Vector2( 125.668, -546.105 )
+rotation = 1.57079
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders4" type="Sprite" parent="."]
+position = Vector2( 316.04, 517.409 )
+texture = ExtResource( 6 )
+
+[node name="Forest of Spiders6" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( -260.001, -187.376 )
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders2" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( 0.709412, -68.0723 )
+texture = ExtResource( 8 )
+
+[node name="Forest of Spiders3" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( -0.322296, 71.2402 )
+texture = ExtResource( 4 )
+
+[node name="Forest of Spiders7" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( -259.9, -418.043 )
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders8" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( -259.468, -644.386 )
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders9" type="Sprite" parent="Forest of Spiders4"]
+position = Vector2( -259.356, -875.467 )
+texture = ExtResource( 9 )
+
+[node name="Forest of Spiders5" type="Sprite" parent="."]
+position = Vector2( 713.105, 320.96 )
+texture = ExtResource( 5 )
+
+[node name="Forest of Spiders7" type="Sprite" parent="."]
+position = Vector2( 400.572, 311.858 )
+texture = ExtResource( 10 )
+
+[node name="Forest of Spiders11" type="Sprite" parent="."]
+position = Vector2( 401.41, 89.7388 )
+texture = ExtResource( 10 )
+
+[node name="Forest of Spiders13" type="Sprite" parent="."]
+position = Vector2( 701.161, -156.916 )
+texture = ExtResource( 10 )
+
+[node name="Forest of Spiders14" type="Sprite" parent="."]
+position = Vector2( 401.47, -382.22 )
+texture = ExtResource( 10 )
+
+[node name="Forest of Spiders8" type="Sprite" parent="."]
+position = Vector2( 673.055, 74.474 )
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders12" type="Sprite" parent="."]
+position = Vector2( 373.155, -150.226 )
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders15" type="Sprite" parent="."]
+position = Vector2( 672.971, -393.338 )
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders16" type="Sprite" parent="."]
+position = Vector2( 672.971, -393.338 )
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders18" type="Sprite" parent="."]
+position = Vector2( 362.865, -547.002 )
+rotation = 1.57079
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders19" type="Sprite" parent="."]
+position = Vector2( 610.178, -546.76 )
+rotation = 1.57079
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders20" type="Sprite" parent="."]
+position = Vector2( 857.212, -546.295 )
+rotation = 1.57079
+texture = ExtResource( 7 )
+
+[node name="Forest of Spiders21" type="Sprite" parent="."]
+position = Vector2( 910.819, -517.47 )
+rotation = 1.57079
+texture = ExtResource( 10 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 4.5765, -73.7605 )
+rotation = 1.57079
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 23, -3.99995 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." groups=[
+"obj",
+"plataform",
+]]
+position = Vector2( 507.131, 460.952 )
+collision_layer = 5
+collision_mask = 5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2( 5, 5.14984e-05 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="." groups=[
+"obj",
+"plataform",
+]]
+position = Vector2( 868.184, -230.908 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2( 5, 5.14984e-05 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 509.215, 594.044 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2( 0, 5.14984e-05 )
+shape = SubResource( 4 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 1021.31, 172.648 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2( -3, 3.00006 )
+rotation = -1.57079
+shape = SubResource( 5 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 403.636, -169.114 )
+rotation = 1.57079
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 23, 5.14984e-05 )
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 490.699, -517.077 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 23, 5.14984e-05 )
+shape = SubResource( 7 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 706.643, -169.114 )
+rotation = 1.57079
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 23, 5.14984e-05 )
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 62.1114, -249.249 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 450.111, -186.249 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 466.111, -367.249 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 965.604, 202.879 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 464.43, 107.017 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 65.8447, 201.197 )
+
+[node name="Node2D7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 948.786, -20.7993 )
+
+[node name="Node2D8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 334.932, -24.1629 )

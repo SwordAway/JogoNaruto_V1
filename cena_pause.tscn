@@ -1,0 +1,419 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://fonts/njnaruto.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Imagens/pause.jpg" type="Texture" id=2]
+[ext_resource path="res://Imagens/nuvem2branca.png" type="Texture" id=3]
+[ext_resource path="res://script_pause.gd" type="Script" id=4]
+[ext_resource path="res://Imagens/sons/BIG5AUDIO_UI & UX_FINAL/02_Notification/GUI_Notification 07 - barulho pause.wav" type="AudioStream" id=5]
+[ext_resource path="res://Imagens/sons/acerta_shuriken.wav" type="AudioStream" id=6]
+[ext_resource path="res://Imagens/sons/BIG5AUDIO_UI & UX_FINAL/03_Select/GUI_Select_29 1 - selec person.wav" type="AudioStream" id=7]
+[ext_resource path="res://Imagens/Screenshot_2.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/Screenshot_1.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/sons/BIG5AUDIO_UI & UX_FINAL/02_Notification/GUI_Notification 16 1 - usar para popup.wav" type="AudioStream" id=10]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_top = 5
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=4]
+size = 70
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_top = 9
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 1, 0.4, 0, 1 )
+border_blend = true
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=8]
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_top = 4
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=10]
+resource_name = "pulsa"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sair_pause:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Controle/Label5:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=11]
+size = 18
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=12]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 14
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 14
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 0.701961 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[node name="Node2D" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 4 )
+
+[node name="pause" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.568627 )
+position = Vector2( 512.173, 300.734 )
+scale = Vector2( 1.70157, 1.40074 )
+texture = ExtResource( 2 )
+
+[node name="Som" type="Label" parent="."]
+margin_left = 440.644
+margin_top = 264.0
+margin_right = 576.644
+margin_bottom = 301.0
+custom_styles/normal = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+text = "                 Som"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Musica" type="Label" parent="."]
+margin_left = 427.644
+margin_top = 305.0
+margin_right = 592.644
+margin_bottom = 342.0
+custom_styles/normal = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+text = "                 musica"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChekSom" type="CheckButton" parent="."]
+margin_left = 439.942
+margin_top = 263.169
+margin_right = 515.942
+margin_bottom = 303.169
+pressed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChekMusic" type="CheckButton" parent="."]
+margin_left = 426.942
+margin_top = 303.599
+margin_right = 502.942
+margin_bottom = 343.599
+pressed = true
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1024.0
+margin_bottom = 98.0
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "                              Pause"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nuvem2branca" type="Sprite" parent="."]
+position = Vector2( 84.541, 50.8579 )
+scale = Vector2( 0.209267, 0.172269 )
+texture = ExtResource( 3 )
+
+[node name="nuvem2branca2" type="Sprite" parent="."]
+position = Vector2( 116.541, 56.8579 )
+scale = Vector2( 0.209267, 0.172269 )
+texture = ExtResource( 3 )
+
+[node name="nuvem2branca4" type="Sprite" parent="."]
+position = Vector2( 945.541, 49.8579 )
+rotation = 3.14159
+scale = Vector2( 0.209, -0.172 )
+texture = ExtResource( 3 )
+
+[node name="nuvem2branca3" type="Sprite" parent="."]
+position = Vector2( 912.541, 54.8579 )
+rotation = -3.14159
+scale = Vector2( 0.209, -0.172 )
+texture = ExtResource( 3 )
+
+[node name="Tela_inicio" type="Button" parent="."]
+margin_left = 347.0
+margin_top = 426.0
+margin_right = 679.0
+margin_bottom = 471.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+text = "voltar  tela  de  inicio"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Controles" type="Button" parent="."]
+margin_left = 425.942
+margin_top = 364.297
+margin_right = 594.942
+margin_bottom = 409.297
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+text = "controles"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair_pause" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.573267 )
+margin_left = 113.193
+margin_top = 503.223
+margin_right = 948.193
+margin_bottom = 571.223
+custom_fonts/font = SubResource( 9 )
+text = "Pressione  \" p \"  para   voltar   ao  jogo"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "pulsa"
+anims/pulsa = SubResource( 10 )
+
+[node name="Pause_Som" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[node name="Press" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+
+[node name="Selec" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+
+[node name="poupup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -10.0
+
+[node name="Controle" type="ColorRect" parent="."]
+self_modulate = Color( 0, 0, 0, 0 )
+margin_left = 146.0
+margin_top = 180.0
+margin_right = 857.0
+margin_bottom = 562.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Screenshot_1" type="Sprite" parent="Controle"]
+position = Vector2( 102.203, 104.315 )
+scale = Vector2( 0.683552, 0.683552 )
+texture = ExtResource( 9 )
+
+[node name="Screenshot_2" type="Sprite" parent="Controle/Screenshot_1"]
+position = Vector2( 2.59698, 268.751 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="Controle"]
+margin_left = 57.0
+margin_top = 23.0
+margin_right = 151.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 11 )
+text = "jogador   1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Controle"]
+margin_left = 57.0
+margin_top = 199.443
+margin_right = 151.0
+margin_bottom = 220.443
+custom_fonts/font = SubResource( 11 )
+text = "jogador   2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="Controle"]
+modulate = Color( 1, 1, 1, 0.573267 )
+margin_left = 246.225
+margin_top = 168.518
+margin_right = 684.225
+margin_bottom = 189.518
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+text = "pressione   \"  esc  \"  para   sair   do   menu   de    controle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Controle"]
+margin_left = 207.0
+margin_top = 220.443
+margin_right = 694.0
+margin_bottom = 344.443
+custom_fonts/font = SubResource( 13 )
+text = "JUTSU  BOLA  DE  FOGO   =   tecla   \" 8 \"                   Socos   =   tecla   \" 0  \"
+
+Transformacao   =  tecla  \" 9 \"                                     shuriken   =   tecla  \" 9 \"  
+
+Cair  de  Plataforma   =   tecla  \" 6  \""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Controle"]
+margin_left = 207.0
+margin_top = 44.0
+margin_right = 706.0
+margin_bottom = 161.0
+custom_fonts/font = SubResource( 14 )
+text = "JUTSU  BOLA  DE  FOGO   =   tecla  \" j \"                   Socos   =   tecla  \" K  \"
+
+Transformacao   =  tecla \" l \"                                     shuriken   =   tecla \" h \"  
+
+Cair  de  Plataforma   =   tecla    \"  espaco  \"             Pause    =   tecla   \"  P  \""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Controle"]
+show_behind_parent = true
+margin_right = 711.0
+margin_bottom = 382.0
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ChekSom" to="." method="_on_ChekSom_pressed"]
+[connection signal="pressed" from="ChekMusic" to="." method="_on_ChekMusic_pressed"]
+[connection signal="mouse_entered" from="Tela_inicio" to="." method="_on_Tela_inicio_mouse_entered"]
+[connection signal="pressed" from="Tela_inicio" to="." method="_on_Tela_inicio_pressed"]
+[connection signal="pressed" from="Controles" to="." method="_on_Controles_pressed"]

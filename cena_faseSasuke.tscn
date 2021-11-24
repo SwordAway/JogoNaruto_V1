@@ -1,0 +1,183 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Imagens/background/Valley of the End ani1.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/background/Valley of the End bg.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/background/Valley of the End ani3.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/background/Valley of the End fundo.png" type="Texture" id=4]
+[ext_resource path="res://script_cena_faseNaruto.gd" type="Script" id=5]
+[ext_resource path="res://cena_inimigo.tscn" type="PackedScene" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "cacho",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 34.2499, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 28.4591, 41.971 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 62.8409, 30.9092 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 39.4179, 7.74963 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 54.123, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 514.4, 10 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Valley of the End fundo" type="Sprite" parent="."]
+position = Vector2( 518.625, 427.044 )
+scale = Vector2( 1.17013, 1.17013 )
+texture = ExtResource( 4 )
+
+[node name="Valley of the End bg" type="Sprite" parent="."]
+position = Vector2( 513.794, 220.49 )
+scale = Vector2( 2.00699, 1.38129 )
+z_index = -7
+texture = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 630.981, 445.454 )
+scale = Vector2( 1.17013, 1.17013 )
+frames = SubResource( 1 )
+animation = "cacho"
+frame = 1
+playing = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -101
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 371.245, 527.412 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0.890869, 36.7179 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 512.702, 565.13 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 0.890869, 36.7179 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 653.266, 518.61 )
+collision_layer = 7
+collision_mask = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 1.52081, 42.3875 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 964.447, 522.062 )
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( -902.764, 49.3598 )
+shape = SubResource( 4 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." groups=[
+"obj",
+]]
+position = Vector2( 964.447, 522.062 )
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2( 1.45959, 47.983 )
+shape = SubResource( 4 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="." groups=[
+"Plataform",
+"obj",
+]]
+position = Vector2( 33.6579, 410.257 )
+collision_layer = 5
+collision_mask = 5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+shape = SubResource( 5 )
+one_way_collision = true
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="." groups=[
+"Plataform",
+"obj",
+]]
+position = Vector2( 974.813, 410.084 )
+collision_layer = 5
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="Node2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( 974.466, 369.135 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 970.552, 514.307 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 651.229, 477.354 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 368.467, 483.437 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 511.702, 636.509 )
+collision_layer = 3
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 7 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

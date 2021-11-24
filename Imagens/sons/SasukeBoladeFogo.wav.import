@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SasukeBoladeFogo.wav-5eb07dddc5e0453ede12a8e7cffca7f2.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/SasukeBoladeFogo.wav"
+dest_files=[ "res://.import/SasukeBoladeFogo.wav-5eb07dddc5e0453ede12a8e7cffca7f2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

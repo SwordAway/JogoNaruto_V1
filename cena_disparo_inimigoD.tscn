@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://script_ataque_inimigoD.gd" type="Script" id=1]
+[ext_resource path="res://cena_disparo_inimigo.tres" type="SpriteFrames" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 16.0
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 32, 8 )
+
+[node name="FoiceD" type="Area2D" parent="."]
+position = Vector2( 2.77332, -1.92188 )
+collision_layer = 7
+collision_mask = 7
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FoiceD"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="FoiceD"]
+frames = ExtResource( 2 )
+animation = "foice"
+frame = 1
+playing = true
+
+[node name="FoiceD2" type="Area2D" parent="FoiceD"]
+position = Vector2( -10.7733, -8.18822 )
+collision_layer = 7
+collision_mask = 2147483655
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="FoiceD/FoiceD2"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="FoiceD/FoiceD2"]
+frames = ExtResource( 2 )
+animation = "foice"
+playing = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+[connection signal="area_entered" from="FoiceD" to="FoiceD" method="_on_FoiceD_area_entered"]
+[connection signal="body_entered" from="FoiceD" to="FoiceD" method="_on_FoiceD_body_entered"]
+[connection signal="timeout" from="Timer" to="FoiceD" method="_on_Timer_timeout"]

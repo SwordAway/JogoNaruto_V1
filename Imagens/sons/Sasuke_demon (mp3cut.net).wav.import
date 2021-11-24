@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Sasuke_demon (mp3cut.net).wav-82ed2b947896818e79b7b8c6cba57d37.sample"
+
+[deps]
+
+source_file="res://Imagens/sons/Sasuke_demon (mp3cut.net).wav"
+dest_files=[ "res://.import/Sasuke_demon (mp3cut.net).wav-82ed2b947896818e79b7b8c6cba57d37.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
